@@ -4,14 +4,18 @@
  */
 package com.huuhung.exam_service.dto.response;
 
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /**
  *
  * @author qnam0
  */
 @Data @Builder
+@NoArgsConstructor   
+@AllArgsConstructor
 public class AnswerResponse {
     private Integer questionOrder;
     private String correctOptionCode; // Ví dụ: "60:A"
