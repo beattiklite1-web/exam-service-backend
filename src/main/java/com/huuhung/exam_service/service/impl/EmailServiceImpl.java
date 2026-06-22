@@ -33,9 +33,7 @@ public class EmailServiceImpl implements EmailService {
         } catch (Exception e) {
             System.err.println("=> Lỗi gửi mail: " + e.getMessage());
              e.printStackTrace(); // In stack trace để debug
-        
-        // NÊN throw exception để biết lỗi
-        throw new RuntimeException("Không thể gửi email: " + e.getMessage(), e);
+        System.err.println("⚠️ User vẫn được tạo, nhưng mail không gửi được!");
         }
     }
 }
