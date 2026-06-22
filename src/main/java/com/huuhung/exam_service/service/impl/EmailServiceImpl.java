@@ -23,7 +23,7 @@ public class EmailServiceImpl implements EmailService {
     public void sendSimpleEmail(String to, String subject, String content) {
         try {
             SimpleMailMessage message = new SimpleMailMessage();
-            message.setFrom("Hệ thống Exam <email_cua_hung@gmail.com>");
+            message.setFrom("Hệ thống Exam ");
             message.setTo(to);
             message.setSubject(subject);
             message.setText(content);
